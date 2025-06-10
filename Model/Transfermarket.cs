@@ -28,7 +28,7 @@ namespace Esport_Team_Hub.Model
 
         public Transfermarket()
         {
-            ListingDate = DateTime.Now;
+            ListingDate = DateTime.UtcNow.Date; //Does this work too?
 
         }
 
