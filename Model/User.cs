@@ -8,10 +8,7 @@ namespace Esport_Team_Hub.Model
 {
     public enum Role
     {
-        LEADER,
-        MANAGER,
-        PLAYER,
-        COACH
+        LEADER, MANAGER, PLAYER, COACH
     }
     internal class User
     {

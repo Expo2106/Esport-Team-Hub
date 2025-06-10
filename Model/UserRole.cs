@@ -9,11 +9,7 @@ namespace Esport_Team_Hub.Model
     
     public enum Status
     {
-        ACTIVE,
-        INACTIVE,
-        BENCHED,
-        SUBSTITUDE,
-        FREEAGENT
+        ACTIVE, INACTIVE, BENCHED, SUBSTITUDE, FREEAGENT
     }
     internal class UserRole
     {

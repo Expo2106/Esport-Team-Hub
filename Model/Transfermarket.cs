@@ -8,12 +8,7 @@ namespace Esport_Team_Hub.Model
 {
     public enum TransferStatus
     {
-        LISTED,
-        PENDING,
-        ACCEPTED,
-        REJECTED,
-        COMPLETED,
-        WITHDRAWN
+        LISTED, PENDING, ACCEPTED, REJECTED, COMPLETED, WITHDRAWN
 
     }
     internal class Transfermarket

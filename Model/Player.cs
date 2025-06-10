@@ -8,9 +8,7 @@ namespace Esport_Team_Hub.Model
 {
     public enum Platform
     {
-        PC,
-        PlayStation,
-        Xbox
+        PC, PlayStation, Xbox
     }
     internal class Player
     {

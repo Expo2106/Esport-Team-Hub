@@ -8,13 +8,7 @@ namespace Esport_Team_Hub.Model
 {
     public enum Region
     {
-        EU,
-        NA,
-        OCE,
-        SAM,
-        MENA,
-        APAC,
-        SSA
+        EU, NA, OCE, SAM, MENA, APAC, SSA
     }
     internal class Team
     {
