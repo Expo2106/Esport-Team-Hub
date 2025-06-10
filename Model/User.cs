@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Esport_Team_Hub.Model
 {
+    public enum Role
+    {
+        Leader,
+        Manager,
+        Player,
+        Coach
+    }
     internal class User
     {
         public int Id { get; set; }
@@ -18,7 +25,7 @@ namespace Esport_Team_Hub.Model
         public string Nationality { get; set; }
         public string Email { get; set; }
         // Role has to be changed to a enum or a more structured type in the future
-        public string Role { get; set; } // e.g., "Admin", "Player", "Coach"
+        public Role Role { get; set; } // e.g., "Admin", "Player", "Coach"
         public DateTime CreatedAt { get; set; }
         public DateTime LastLogin { get; set; }
 
@@ -28,7 +35,7 @@ namespace Esport_Team_Hub.Model
             LastLogin = DateTime.Now;
         }
 
-        public User(int id, string username, string password, string firstName, string lastName, string gamerTag, DateTime dateOfBirth, string nationality, string email, string role, DateTime createdAt, DateTime lastLogin)
+        public User(int id, string username, string password, string firstName, string lastName, string gamerTag, DateTime dateOfBirth, string nationality, string email, Role role, DateTime createdAt, DateTime lastLogin)
         {
             Id = id;
             Username = username;
