@@ -16,7 +16,7 @@ namespace Esport_Team_Hub.Model
         public int ID { get; set; }
         public int UserID { get; set; }
         public int OfferingTeamID { get; set; } //What is with the Players, who are free Agent????
-        public decimal RequestedValue { get; set; }
+        public double RequestedValue { get; set; }
         public TransferStatus TransferStatus { get; set; }
         public DateTime ListingDate { get; set; }
         public string Description { get; set; }
