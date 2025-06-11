@@ -1,0 +1,14 @@
+USE esport_team_hub;
+
+CREATE TABLE IF NOT EXISTS user_team (
+user_id INT,
+team_id INT,
+joined_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+left_at TIMESTAMP,
+FOREIGN KEY (user_id) REFERENCES user(user_id) 
+ON DELETE CASCADE
+ON UPDATE CASCADE,
+FOREIGN KEY (team_id) REFERENCES team(team_id) 
+ON DELETE CASCADE
+ON UPDATE CASCADE
+);

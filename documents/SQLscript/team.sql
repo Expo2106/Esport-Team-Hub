@@ -1,0 +1,12 @@
+USE esport_team_hub;
+
+CREATE TABLE IF NOT EXISTS team (
+    team_id INT AUTO_INCREMENT PRIMARY KEY,
+    team_name VARCHAR(100) NOT NULL UNIQUE,
+    team_tag VARCHAR(4) UNIQUE, 
+    region ENUM("EU, NA, OCE, SAM, MENA, APAC, SSA"),
+    description TEXT,
+    logo_url VARCHAR(255), 
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
