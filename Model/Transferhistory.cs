@@ -18,7 +18,7 @@ namespace Esport_Team_Hub.Model
 
         public Transferhistory()
         {
-            TransferDate = DateTime.UtcNow.Date;
+            TransferDate = DateTime.Now.Date;
         }
 
         public Transferhistory(int id, int listingID, int userID, int fromTeam,  int toTeam, decimal transferFee, DateTime transferDate)
