@@ -27,7 +27,7 @@ namespace Esport_Team_Hub.Model
 
         }
 
-        public Transfermarket(int id, int userID, int offeringTeamID, decimal requestedValue, TransferStatus transferStatus, DateTime listingDate, string description)
+        public Transfermarket(int id, int userID, int offeringTeamID, double requestedValue, TransferStatus transferStatus, DateTime listingDate, string description)
         {
             ID = id;
             UserID = userID;
